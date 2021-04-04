@@ -5,17 +5,17 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="body">
     <section class="info-block">
       <img class="info-block__image" src="./eisenhower-matrix.jpg" alt="the eisenhower matrix">
       <a class="info-block__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </section>
     <section class="main-section">
-      <article class="new-task" id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
+      <article class="todo" id="addTask">
+        <label class="todo__label todo__label_new" for="new-task">Add Item</label>
         <div class="task-wrapper">
-          <input class="new-task__input" id="new-task" type="text">
-          <button class="new-task__btn">Add</button>
+          <input class="todo__input todo__input_new" id="new-task" type="text">
+          <button class="todo__btn">Add</button>
         </div>
       </article>
       <article class="todo">
@@ -25,8 +25,8 @@
             <input class="todo__checkbox" type="checkbox">
             <label class="todo__label">Pay Bills</label>
             <input class="todo__input" type="text">
-            <button class="todo__btn todo__btn_edit">Edit</button>
-            <button class="todo__btn todo__btn_delete"><img class="todo__icon" src="./remove.svg"></button>
+            <button class="btn todo__btn todo__btn_edit">Edit</button>
+            <button class="btn todo__btn todo__btn_delete"><img class="todo__icon" src="./remove.svg"></button>
           </li>
           <li class="todo__item todo__item_edit">
             <input class="todo__checkbox" type="checkbox">
@@ -45,7 +45,7 @@
             <label class="todo__label">See the Doctor</label>
             <input class="todo__input" type="text">
             <button class="todo__btn todo__btn_edit">Edit</button>
-            <button class="todo__btn todo__btn_delete"><img src="./remove.svg"></button>
+            <button class="todo__btn todo__btn_delete"><img class="todo__icon" src="./remove.svg"></button>
           </li>
         </ul>
       </article>
