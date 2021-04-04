@@ -6,46 +6,46 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <section class="aaa">
-      <img src="./eisenhower-matrix.jpg" alt="the eisenhower matrix">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <section class="info-block">
+      <img class="info-block__image" src="./eisenhower-matrix.jpg" alt="the eisenhower matrix">
+      <a class="info-block__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </section>
-    <section class="centered-main-page-element">
-      <article id="topSectionForAddingElementToList">
+    <section class="main-section">
+      <article class="new-task" id="topSectionForAddingElementToList">
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task" type="text">
-          <button>Add</button>
+        <div class="task-wrapper">
+          <input class="new-task__input" id="new-task" type="text">
+          <button class="new-task__btn">Add</button>
         </div>
       </article>
-      <article>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="./remove.svg"></button>
+      <article class="todo">
+        <h3 class="todo__title">Todo</h3>
+        <ul class="todo__list" id="incompleteTasks">
+          <li class="todo__item">
+            <input class="todo__checkbox" type="checkbox">
+            <label class="todo__label">Pay Bills</label>
+            <input class="todo__input" type="text">
+            <button class="todo__btn todo__btn_edit">Edit</button>
+            <button class="todo__btn todo__btn_delete"><img class="todo__icon" src="./remove.svg"></button>
           </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete"><img src="./remove.svg"></button>
+          <li class="todo__item todo__item_edit">
+            <input class="todo__checkbox" type="checkbox">
+            <label class="todo__label">Go Shopping</label>
+            <input class="todo__input" type="text" value="Go Shopping">
+            <button class="todo__btn todo__btn_edit">Save</button>
+            <button class="todo__btn todo__btn_delete"><img class="todo__icon" src="./remove.svg"></button>
           </li>
         </ul>    
       </article>
-      <article>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="./remove.svg"></button>
+      <article class="todo">
+        <h3 class="todo__title">Completed</h3>
+        <ul class="todo__list" id="completed-tasks">
+          <li class="todo__item">
+            <input class="todo__checkbox" type="checkbox" checked>
+            <label class="todo__label">See the Doctor</label>
+            <input class="todo__input" type="text">
+            <button class="todo__btn todo__btn_edit">Edit</button>
+            <button class="todo__btn todo__btn_delete"><img src="./remove.svg"></button>
           </li>
         </ul>
       </article>
